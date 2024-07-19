@@ -80,15 +80,14 @@ WSGI_APPLICATION = 'Moodflip.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'MoodFlip',
+        'NAME': 'MoodFlip',  # MongoDB database name
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            'host': 'localhost',
-            'port': 27017,
+            'host': 'localhost',  # or your MongoDB host
+            'port': 27017,        # default MongoDB port
         }
     }
 }
-
 
 
 
@@ -130,7 +129,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles'),
 
 
 
