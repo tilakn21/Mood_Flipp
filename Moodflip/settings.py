@@ -80,14 +80,15 @@ WSGI_APPLICATION = 'Moodflip.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'MoodFlip',  # MongoDB database name
+        'NAME': 'MoodFlip',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            'host': 'localhost',  # or your MongoDB host
-            'port': 27017,        # default MongoDB port
+            'host': 'localhost',
+            'port': 27017,
         }
     }
 }
+
 
 
 
